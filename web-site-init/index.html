@@ -5,31 +5,33 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quems</title>
+    <title>Academic Lovers</title>
     <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 <body>
-        <!-- Inicio Menu de Navegação -->
 
     <header>
         <nav class="desktop">
             <ul>
                 <a href="" class="logo">Academic<span class="logo-rosa">Lovers</span></a>
                 <li class="items items-hover" id="init"><a href="/" title="Início">Início</a></li>
-                <li class="items items-hover" id="about"><a href="/" title="Sobre">Sobre</a></li>
-                <li class="items items-hover" id="prjs"><a href="/" title="Projetos">Projetos</a></li>
-                <li class="items items-hover" id="cont"><a href="/" title="Contato ">Contato</a></li>
-                <li class=" items login "><a href="/login" title="Login ">Login</a></li>
+                <li class="items items-hover" id="about"><a href="/sobre" title="Sobre">Sobre</a></li>
+                <li class="items items-hover" id="prjs"><a href="/projetos" title="Projetos">Personagens</a></li>
+                <li class="items items-hover" id="cont"><a href="/contato" title="Contato ">App</a></li>
+                <li class="items items-hover" id="cont"><a href="/contato" title="Contato ">Contato</a></li>
+                <button class=" items login login-card" type="submit">Login</button>
 
             </ul>
 
         </nav>
         <div class="menu-resp">
+
             <a href="#menu" class="btnMenu btnMenu_open" id="open">Menu</a>
             <ul id="menu" class="menu">
+                <a href="" class="logo">Academic<span class="logo-rosa">Lovers</span></a>
                 <li class="btnMenu btnMenu_close" id="close">Sair</li>
                 <li class="menu-item">
                     <a href="/" class="menu-item-action" title="Início">Início</a>
@@ -38,33 +40,219 @@
                     <a href="/sobre" class="menu-item-action" title="Sobre">Sobre</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/projetos" class="menu-item-action" title="Projetos">Projetos</a>
+                    <a href="/projetos" class="menu-item-action" title="Projetos">Personagens</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/eventos" class="menu-item-action" title="Eventos">Eventos</a>
+                    <a href="/eventos" class="menu-item-action" title="Eventos">App</a>
                 </li>
                 <li class="menu-item">
                     <a href="/contato" class="menu-item-action" title="Contato">Contato</a>
                 </li>
-                <li class="menu-item">
-                    <a href="/login" class="menu-item-action" title="Login">Login</a>
-                </li>
+                <button class=" items login " type="submit">Login</button>
             </ul>
         </div>
 
     </header>
 
-    <!-- Fim Menu de Navegação -->
-        <div class="banner"> 
 
+    <!-- <div>
+        <div class="banner">
+            <img src="img/fundo2.jpg" alt="">
+        </div>
+    </div> -->
+    <!-- pop up form -->
+    <div id="modal-promocao" class="modal-container">
+
+        <div class="modal">
+            <button class="fechar">x</button>
+            <div class="lines">
+                <h3 class="subtitle-form">Login</h3>
+                <form>
+                    <input type="text" class="input" placeholder="E-mail:">
+                    <input type="password" name="password" class="input" placeholder="Senha:">
+                    <input type="button" class="button" value="Entrar">
+                </form>
+            </div>
+
+            <div class="holes hole-middle "></div>
+            <div class="holes hole-bottom "></div>
         </div>
 
+
+    </div>
+    <!-- final form pop up -->
+    <!-- Sobre-->
+    <section class="services " title="Seção sobre o Academic Lovers ">
+        <p><strong class="title " id="gotovalor ">Academic <span class="logo-rosa ">Lovers</span>? Universidade Pantheon? O que é isso?
+        </strong></p>
+        <hr class="border ">
+        <div class="cen ">
+            <div class="service ">
+                <i class="fas fa-university " style="font-size: x-large; color:#aa96da;margin-bottom: 15px; "></i>
+                <p>Para melhor organização a direção de U.P. criou a divisão de departamentos e felizmente bolsistas que ganham 100% de cobertura podem escolher a qual pertencer. Conheça diferentes estudantes e aventure-se com eles!
+                </p>
+            </div>
+            <div class="service ">
+                <i class="fas fa-heart " style="font-size: x-large; color: #EA2027;margin-bottom: 15px; "></i>
+                <p> Conheça diferentes personalidades com talentos brilhantes. São 6 (seis) opções diferentes de paqueras que não levam em conta a identidade de gênero ou orientação do jogador, todos somos livres para amar!
+                </p>
+            </div>
+
+
+
+
+            <div class="service ">
+                <i class="fas fa-crown " style="font-size: x-large; color:#8ad8ea; margin-bottom: 15px;"></i>
+                <p> Por quais pronomes gostaria que os paqueras usassem com você? buscamos otimizar a melhor experiência para você e sabemos o quão importante um pronome é e o peso que ele carrega. Seja livre, seja quem quiser ser! nós apoiaremos!
+                </p>
+            </div>
+        </div>
+
+        <hr class="border ">
+    </section>
+    <!-- Fim  -->
+    <!-- Personagens -->
+    <section class="wrapper-section">
+        <div class="content">
+            <h2 class="title"> Paqueras</h2>
+            <hr class="border" />
+            <p class="text">Conheça diferentes personalidades com talentos brilhantes. São 6 (seis) opções diferentes de paqueras que não levam em conta a identidade de gênero ou orientação do jogador, todos somos livres para amar!</p>
+            <div class="person">
+                <button id="apolo" onclick="trocatitulo()"></button> <button id="dilan" onclick="trocatituloD()"> </button> <button id="hela" onclick="trocatituloH()"></button> <button id="kae" onclick="trocatituloK()"></button>
+                <button id="naomi" onclick="trocatituloN()"></button> <button id="quinn" onclick="trocatituloQ()"></button>
+            </div>
+
+            <div class="blackboard">
+                <h2 class="title-blackboard" id="titulo">Paqueras</h2>
+                <p class="text-blackboard" id="texto"> Clique na foto dos personagens a cima para ler suas devidas descrições!</p>
+
+            </div>
+        </div>
+        <div class="wrapper-div">
+            <img src="img/perso1.png" alt="Apollo" class="photo display-none " id="imgApollo">
+            <img src="img/Vladimir-vampires.png" alt="Dilan" class="photo display-none" id="imgDilan">
+            <img src="img/perso1.png" alt="Hela" class="photo display-none " id="imgHela">
+            <img src="img/Vladimir-vampires.png" alt="Kae" class="photo display-none " id="imgKae">
+            <img src="img/perso1.png" alt="Naomi" class="photo display-none" id="imgNaomi">
+            <img src="img/Vladimir-vampires.png" alt="Quinn" class="photo display-none" id="imgQuinn">
+
+        </div>
+        </div>
+    </section>
+<!--Section1-->
+    <section class="wrapper-section1">
+    <div class="content">
+        <div class="blackboard1">
+            <p class="text-blackboard" id="texto"> As portas da Universidade Pantheon estão abertas, assim como alguns corações de seus estudantes! Faça parte de um departamento, flerte, faça amigos e viva bons momentos ao lado de pessoas únicas e, claro, não mexa na comida de ninguém na geladeira da república!</p></br>
+            
+                <button class="btnjogar" type="submit">Login</button>
+
+                <button class="btnjogar2" type="submit">Registro</button>
+        </div>
+    </div>
+    <div>
+    </div>
+        <div class="wrapper-div">
+        </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- Departamentos -->
+    <section class="services " title="Seção sobre o Academic Lovers ">
+        <p><strong class="title " id="gotovalor "> Departamentos
+        </strong></p>
+        <p>Oh! você ainda não escolheu um? Bom, vamos mostrar aqui um pouco sobre eles hehe…
+        </p>
+
+        <div class="cen ">
+            <div class="service">
+                <i class="fas fa-chart-pie" style="font-size: x-large; color: #192a56;margin-bottom: 15px;"></i>
+                <h2>Ciências Exatas</h2>
+                <p>Teoremas complicados, teorias fascinantes e uma lógica incrível para tudo! Ideal para os que buscam um amor como os números, crescente e infinito! Aqui sentimenstos são constantes e não variáveis.
+                </p>
+            </div>
+            <div class="service ">
+                <i class="fas fa-microscope" style="font-size: x-large; color: #44bd32; margin-bottom: 15px; "></i>
+                <h2>Ciências Biológicas e Médicas</h2>
+                <p>Por trás de experimentos incríveis e rostos sérios há uma ação de explosiva que incluem desejo e confiança. A formúla do amor é capaz de desconcentrar até o melhor dos cientistas. Encontre o seu jeito único de viver.
+                </p>
+            </div>
+            <div class="service ">
+                <i class="fas fa-scroll" style="font-size: x-large; color: #e1b12c; margin-bottom: 15px; "></i>
+                <h2>Ciências Humanas</h2>
+                <p> A linguagem dos sentimentos é como uma obra de arte, ou uma escrita, complexa e admirada. Perfeito para aqueles que sempre buscam se expressar usando a imaginação e criatividade dentro de si da melhor maneira.
+                </p>
+            </div>
+            <div class="service ">
+                <i class="fas fa-keyboard" style="font-size: x-large; color: #2f3640; margin-bottom: 15px; "></i>
+                <h2>Tecnologia da Informação (T.I)</h2>
+                <p>O incrível mundo do T.I, complexo, lógico e criativo! Ideal para quem ama <strike>café e olheiras</strike> tecnologia e suas funcionalibidades! Em T.I é inadmissível servir emoções e café fracos!
+                </p>
+            </div>
+        </div>
+
+        <hr class="border ">
+    </section>
+    <!-- Fim -->
+    <!-- contato -->
+    <section class="wrapper-section">
+
+    </section>
+    <!-- fim do contato -->
+
+    <!-- Rodapé -->
+    <footer>
+        <a href=" " class="logo ">Academic<span class="logo-rosa ">Lovers</span></a>
+
+        <ul class="list-footer ">
+            <li><a href="/ " title="Início ">Início</a></li>
+            <li><a href="/login " title="Login ">Menções legais</a></li>
+            <li><a href="/login " title="Login ">Cookies</a></li>
+            <li><a href="/login " title="Login ">Política de Vídeos</a></li>
+        </ul>
+        <div class="social-media ">
+            <a href="https://www.instagram.com/fatectq/?hl=pt-br "><i class="fab fa-instagram " style="font-size: x-large; color: #4b4b4b; "></i></a>
+            <a href="https://twitter.com/FatecTQ "><i class="fab fa-twitter " style="font-size: x-large; color: #4b4b4b; "></i></a>
+            <a href="https://www.youtube.com/ "><i class="fab fa-youtube " style="font-size: x-large; color: #4b4b4b; "></i></a>
+        </div>
+
+        <p class="copyrights ">&copy; 2021 Queendom - Otome Games.</p>
+    </footer>
+    <!-- final do rodapé -->
+
+
+    <!-- pop up script -->
+    <script>
+        function iniciaModal(modalID) {
+
+            const modal = document.getElementById(modalID);
+            if (modal) {
+                modal.classList.add('mostrar');
+                modal.addEventListener('click', (e) => {
+                    if (e.target.id == modalID || e.target.className == 'fechar') {
+                        modal.classList.remove('mostrar');
+
+                    }
+                });
+            }
+        }
+
+
+        const logo = document.querySelector('.login-card');
+        logo.addEventListener('click', () => iniciaModal('modal-promocao'));
+
+        // document.addEventListener('scroll', () => {
+        //     if (window.pageYOffset > 800) {
+        //         iniciaModal('modal-promocao')
+        //     }
+        // })
+    </script>
+    <!-- pop up script final -->
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js "></script>
+    <script src="js/function.js "></script>
 </body>
-<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js "></script>
-<script src="js/function.js"></script>
-<script>
-    function togglePopup(){
-    document.getElementById("popup").classList.toggle("active");
-    }
-</script>
+
+
+
 </html>
